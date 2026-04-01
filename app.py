@@ -2249,6 +2249,12 @@ def inscricao_unica():
         print("Erro ao salvar na planilha:", exc)
         traceback.print_exc()
 
+    try:
+        response = send_registration_to_supabase(form_data)
+        print("Envio para Supabase concluido:", response.status_code)
+    except Exception as exc:
+        print("Erro ao enviar para Supabase:", exc)
+
     return redirect(url_for("confirmacao"))
 
 
