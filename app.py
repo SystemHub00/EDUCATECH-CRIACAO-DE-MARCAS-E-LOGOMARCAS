@@ -32,7 +32,7 @@ COURSE_OPTIONS = [
         "local": "SANTA CRUZ",
         "curso": "EDIÇÃO E CRIAÇÃO DE MARCAS E LOGOMARCAS",
         "turma": "TURMA CRIAÇÃO DE MARCAS 01",
-        "dias_aula": "Seg/quarta e sexta",
+        "dias_aula": "Segunda/Quarta e Sexta",
         "horario": "Das 18 às 22 h",
         "data_inicio": "23/04/2026",
         "encerramento": "📌Aulas 3 Vezes na Semana",
@@ -923,7 +923,7 @@ TEMPLATE_WIZARD = r'''
                 <section class="wizard-panel" data-step="index">
                     <div class="hero-grid">
                         <div class="hero-card">
-                            <span class="hero-pill">PROJETO: EDUCATECH</span>
+                            <span class="hero-pill">PROJETO: QUALIFICATECH</span>
                                 <h1 class="hero-title">EDIÇÃO E CRIAÇÃO DE MARCAS E LOGOMARCAS</h1>
                             <p class="hero-subtitle">
                                 Capacitação Profissional com Ênfase em Novas Tecnologias para Ingresso e Permanência no Mercado de Trabalho!<br>
@@ -2271,7 +2271,7 @@ def confirmacao():
     if not protocolo:
         return redirect(url_for("home"))
 
-    home_url = "https://educatech-criacao-de-marcas-e-logomarcas.onrender.com"
+    home_url = "https://qualificatech-criacao-de-marcas-e-logomarcas.onrender.com"
 
     return render_template_string(
         TEMPLATE_CONFIRMACAO,
